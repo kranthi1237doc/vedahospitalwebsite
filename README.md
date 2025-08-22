@@ -1,6 +1,6 @@
 # Veda Hospital Website
 
-![Veda Hospital](https://img.shields.io/badge/Status-Live-brightgreen)
+![Veda Hospital](https://drive.google.com/file/d/1lCJyTrjS7acJqyQD19rFsvAliMB8_5sM/view?usp=drive_link)
 ![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -51,7 +51,7 @@ veda-hospital/
 ## 📞 Contact Information
 
 - **Phone**: 7901228989, 7302938979
-- **Email**: info@vedahospital.com
+- **Email**: vedahospitalnrt@gmail.com
 - **Emergency**: Available 24/7
 
 ## 🏥 Our Services
@@ -161,4 +161,4 @@ For technical support or customization requests, please create an issue in this 
 
 ---
 
-**Veda Hospital** - *Putting your healing needs first* 🏥
+**Veda Hospital** - *Affordable and Advanced Care* 🏥
