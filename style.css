@@ -1607,131 +1607,85 @@ button:focus-visible,
         max-height: 120px;
     }
 }
-/* AI Health Screening Section */
+/* Health Scan Section - Simple Approach */
 .health-scan-section {
     background: linear-gradient(135deg, #f8fffe 0%, #e8f5f3 100%);
     padding: 80px 0;
+    text-align: center;
 }
 
-.health-scan-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: flex-start;
-    max-width: 1200px;
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #2C5AA0;
+    margin-bottom: 15px;
+}
+
+.scan-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 700px;
     margin: 0 auto;
 }
 
-.scan-info {
-    padding: 30px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.scan-card h3 {
+    color: #2C5AA0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
-.scan-btn {
+.scan-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.feature {
+    padding: 15px;
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5f3 100%);
+    border-radius: 10px;
+    font-weight: 500;
+    border-left: 4px solid #2C5AA0;
+}
+
+.scan-btn-large {
+    display: inline-block;
     background: linear-gradient(135deg, #2C5AA0 0%, #4A90A4 100%);
     color: white;
-    border: none;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-right: 15px;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
 }
 
-.scan-btn:hover {
+.scan-btn-large:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
-}
-
-.scan-btn-outline {
-    background: transparent;
-    color: #2C5AA0;
-    border: 2px solid #2C5AA0;
-}
-
-.scan-btn-outline:hover {
-    background: #2C5AA0;
     color: white;
 }
 
-.scan-app-container {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    overflow: hidden;
+.note {
+    color: #666;
+    font-style: italic;
 }
 
-.scan-header {
-    background: linear-gradient(135deg, #2C5AA0 0%, #4A90A4 100%);
-    color: white;
-    padding: 20px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.close-btn {
-    background: rgba(255,255,255,0.2);
-    border: none;
-    color: white;
-    font-size: 1.3rem;
-    cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 50%;
-}
-
-.scan-iframe-wrapper {
-    height: 500px;
-}
-
-.scan-iframe-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Mobile Responsive */
+/* Mobile responsive */
 @media screen and (max-width: 768px) {
-    .health-scan-content {
+    .scan-features {
         grid-template-columns: 1fr;
-        gap: 30px;
     }
     
-    .scan-iframe-wrapper {
-        height: 400px;
-    }
-}
-/* Special styling for AI Health Scan navigation tab */
-.nav__link[href="#health-scan"] {
-    background: linear-gradient(135deg, #2C5AA0 0%, #4A90A4 100%);
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 25px;
-    margin: 0 5px;
-    transition: all 0.3s ease;
-    font-weight: 600;
-}
-
-.nav__link[href="#health-scan"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
-}
-
-/* Mobile styling */
-@media screen and (max-width: 768px) {
-    .nav__link[href="#health-scan"] {
-        background: transparent;
-        color: #2C5AA0 !important;
-        padding: 12px 20px;
-        border-left: 4px solid #2C5AA0;
+    .scan-card {
+        padding: 30px 20px;
     }
 }
