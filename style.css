@@ -1592,6 +1592,14 @@ button:focus-visible,
     object-fit: contain;
     object-position: center;
 }
+.full-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;  /* Extra big */
+    max-height: 200px; /* Extra big */
+    object-fit: contain;
+}
+
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .full-logo {
