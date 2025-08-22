@@ -209,5 +209,29 @@ function callEmergency() {
 function bookAppointment() {
     scrollToElement('appointment');
 }
+// Health Scan Integration
+function openHealthScan() {
+    const scanContainer = document.getElementById('scan-container');
+    if (scanContainer) {
+        scanContainer.style.display = 'block';
+        scanContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function closeHealthScan() {
+    const scanContainer = document.getElementById('scan-container');
+    if (scanContainer) {
+        scanContainer.style.display = 'none';
+    }
+}
+
+// Initialize health scan
+document.addEventListener('DOMContentLoaded', function() {
+    const startBtn = document.getElementById('start-scan-btn');
+    const closeBtn = document.getElementById('close-scan');
+    
+    if (startBtn) startBtn.addEventListener('click', openHealthScan);
+    if (closeBtn) closeBtn.addEventListener('click', closeHealthScan);
+});
 
 console.log('Veda Hospital JavaScript loaded successfully! 🏥');
