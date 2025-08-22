@@ -11,7 +11,7 @@ readme_content = """# Veda Hospital Website
 
 ## 🏥 About Veda Hospital
 
-**"Putting your healing needs first"**
+**"Affordable and Advanced care"**
 
 Veda Hospital is committed to providing high-quality healthcare services, medical experience, and dedication to health and wellness for all patients. Our goal is to provide accurate diagnosis and faster recovery through advanced yet affordable medical care.
 
@@ -54,7 +54,7 @@ veda-hospital/
 ## 📞 Contact Information
 
 - **Phone**: 7901228989, 7302938979
-- **Email**: info@vedahospital.com
+- **Email**: vedahospitalnrt@gmail.com
 - **Emergency**: Available 24/7
 
 ## 🏥 Our Services
