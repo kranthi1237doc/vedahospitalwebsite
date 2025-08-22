@@ -1557,4 +1557,11 @@ button:focus-visible,
     width: auto;
     margin-right: 10px;
     vertical-align: middle;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__logo {
+        height: 32px;
+    }
 }
