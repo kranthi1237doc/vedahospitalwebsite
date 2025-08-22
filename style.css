@@ -1552,3 +1552,9 @@ button:focus-visible,
   animation: pulse 1.5s ease-in-out infinite;
   pointer-events: none;
 }
+.nav__logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
