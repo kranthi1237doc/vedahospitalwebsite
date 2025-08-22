@@ -13,8 +13,6 @@ plugins:
 
 # SEO settings
 author: "Veda Hospital"
-twitter:
-  username: vedahospital
 facebook:
   app_id: 1234567890
   publisher: https://www.facebook.com/vedahospital
@@ -50,21 +48,19 @@ defaults:
 social:
   - name: facebook
     url: https://www.facebook.com/vedahospital
-  - name: twitter  
-    url: https://twitter.com/vedahospital
-  - name: linkedin
-    url: https://www.linkedin.com/company/vedahospital
-
+  - name: instagram  
+    url: https://www.instagram.com/vedahospital_nrt
+ 
 # Contact information
 contact:
   phone: ["+91-7901228989", "+91-7302938979"]
-  email: "info@vedahospital.com"
-  address: "Veda Hospital, India"
+  email: "vedahospitalnrt@gmail.com"
+  address: "Veda Hospital, Opp Sangam Dairy, Palnadu Road, Narasaraopet, Andhra Pradesh"
 
 # Hospital information
 hospital:
   name: "Veda Hospital"
-  tagline: "Putting your healing needs first"
+  tagline: "Affordable and Advanced care"
   established: "2020"
   specialties:
     - "General Medicine"
