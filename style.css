@@ -1710,3 +1710,28 @@ button:focus-visible,
         height: 400px;
     }
 }
+/* Special styling for AI Health Scan navigation tab */
+.nav__link[href="#health-scan"] {
+    background: linear-gradient(135deg, #2C5AA0 0%, #4A90A4 100%);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 25px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.nav__link[href="#health-scan"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+}
+
+/* Mobile styling */
+@media screen and (max-width: 768px) {
+    .nav__link[href="#health-scan"] {
+        background: transparent;
+        color: #2C5AA0 !important;
+        padding: 12px 20px;
+        border-left: 4px solid #2C5AA0;
+    }
+}
