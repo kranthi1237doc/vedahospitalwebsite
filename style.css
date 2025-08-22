@@ -1565,3 +1565,11 @@ button:focus-visible,
         height: 32px;
     }
 }
+/* Advanced Care Logo Styling */
+.advanced-care-logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+    object-fit: contain;
+}
