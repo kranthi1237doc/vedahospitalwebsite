@@ -10,8 +10,7 @@
 
 <header class="header">
   <div class="container header-content">
-    <img src="logo copy.png" alt="VEDA Hospital Logo" class="logo" />
-    <h1 class="header-title">VEDA Hospital</h1>
+    <img src="LOGO.PNG" alt="VEDA Hospital Logo" class="banner-logo" />
     <nav class="nav">
       <ul class="nav__list">
         <li><a href="index.html" class="nav__link">Home</a></li>
@@ -25,53 +24,36 @@
   </div>
 </header>
 
-<main class="container main-content">
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>We are here to assist you. Please get in touch with us using the form below or using the contact information provided.</p>
-      
-      <div class="contact-content">
+<main class="container">
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/vedahospitalnrt@gmail.com" method="POST">
+      <label>Full Name *</label>
+      <input type="text" name="name" required />
+      <label>Email *</label>
+      <input type="email" name="email" required />
+      <label>Phone *</label>
+      <input type="tel" name="phone" required />
+      <label>Message *</label>
+      <textarea name="message" rows="5" required></textarea>
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://vedahospital.co.in/thank-you.html" />
+      <button type="submit">Send Message</button>
+    </form>
 
-        <!-- Contact Form -->
-        <form id="contactForm" class="contact-form" action="https://formsubmit.co/vedahospitalnrt@gmail.com" method="POST">
-          <label for="contactName">Full Name *</label>
-          <input type="text" id="contactName" name="name" required />
-
-          <label for="contactEmail">Email Address *</label>
-          <input type="email" id="contactEmail" name="email" required />
-
-          <label for="contactPhone">Phone Number *</label>
-          <input type="tel" id="contactPhone" name="phone" required />
-
-          <label for="contactMessage">Message *</label>
-          <textarea id="contactMessage" name="message" rows="5" required></textarea>
-
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://vedahospital.co.in/thank-you.html" />
-
-          <button type="submit">Send Message</button>
-        </form>
-
-        <!-- Contact Information -->
-        <div class="contact-info">
-          <h3>Contact Details</h3>
-          <p><strong>Phone:</strong> +91-7901228989</p>
-          <p><strong>Email:</strong> <a href="mailto:vedahospitalnrt@gmail.com">vedahospitalnrt@gmail.com</a></p>
-          <p><strong>Address:</strong> Opp Sangam dairy, Palnadu Road, Narasaraopet, Andhra Pradesh - 522601</p>
-          <p><strong>Website:</strong> <a href="https://vedahospital.co.in" target="_blank">vedahospital.co.in</a></p>
-        </div>
-
-      </div>
+    <div class="contact-info">
+      <h3>Hospital Information</h3>
+      <p>Phone: +91-7901228989</p>
+      <p>Email: <a href="mailto:vedahospitalnrt@gmail.com">vedahospitalnrt@gmail.com</a></p>
+      <p>Address: Opp Sangam dairy, Palnadu Road, Narasaraopet, Andhra Pradesh - 522601</p>
+      <p>Website: <a href="https://vedahospital.co.in" target="_blank">vedahospital.co.in</a></p>
     </div>
   </section>
 </main>
 
-<footer class="footer">
-  <div class="container footer-content">
-    <p>© 2025 VEDA Hospital - Advanced Healthcare & Medical Technology</p>
-  </div>
+<footer>
+  <p>© 2025 VEDA Hospital - Advanced Healthcare & Medical Technology</p>
 </footer>
 
 </body>
