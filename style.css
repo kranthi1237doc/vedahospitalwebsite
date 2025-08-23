@@ -1,149 +1,107 @@
 :root {
-  --color-primary: #2c5aa0;
-  --color-secondary: #7fb069;
-  --color-text: #333;
-  --color-background: #f9fafb;
+  --color-primary: #2c5aa0; /* Navy blue */
+  --color-primary-dark: #24497a; /* Darker blue for active/hover */
+  --color-banner-bg: #ffffff; /* White banner background */
+  --color-nav-bg: #2c5aa0; /* Navigation bar background */
+  --color-nav-hover: #24497a; /* Navigation link hover color */
+  --color-text-default: #333333;
+  --color-link: #ffffff; /* White links */
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 2.8rem;
+  --font-size-medium: 1.25rem;
 }
 
 body {
   font-family: var(--font-family);
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: #f9fafb;
+  color: var(--color-text-default);
   margin: 0;
   padding: 0;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Header and Banner */
+.header {
+  background-color: var(--color-banner-bg);
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-primary);
 }
 
-/* Banner logo styling */
 .banner-logo {
-  max-width: 250px;
+  max-width: 450px;
   height: auto;
+  margin: 0 auto 10px;
   display: block;
-  margin: 20px auto 10px;
 }
 
-/* Welcome content styling */
+/* Navigation bar */
+.nav {
+  background-color: var(--color-nav-bg);
+  box-shadow: 0 4px 8px rgba(44, 90, 160, 0.4);
+  border-radius: 0 0 8px 8px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.nav__link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  background-color: var(--color-nav-hover);
+}
+
+.nav__link.active {
+  background-color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* Welcome Content */
 .welcome-content {
-  background-color: var(--color-background);
+  background-color: #ffffff;
   padding: 50px 20px 40px;
   text-align: center;
   max-width: 900px;
-  margin: 0 auto 40px;
+  margin: 40px auto 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
 }
 
 .welcome-content h2 {
-  font-size: 2.8rem;
+  font-size: var(--font-size-large);
   color: var(--color-primary);
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .welcome-content p {
-  font-size: 1.25rem;
-  color: var(--color-text);
+  font-size: var(--font-size-medium);
+  color: var(--color-text-default);
   line-height: 1.75;
   max-width: 700px;
   margin: 1.25rem auto;
   font-weight: 500;
 }
 
-/* Header styling */
-.header {
-  background: linear-gradient(135deg, var(--color-primary), #4a90a4);
-  color: white;
-  padding: 20px 0 10px;
-  text-align: center;
-}
-
-.logo {
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.header-title {
-  margin: 0;
-  font-size: 2.4rem;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-}
-
-.header-tagline {
-  margin-top: 5px;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-.header-contact {
-  margin-top: 10px;
-  font-size: 0.95rem;
-}
-
-.header-contact span,
-.header-contact a {
-  color: white;
-  display: inline-block;
-  margin: 0 6px;
-  text-decoration: underline;
-}
-
-/* Navigation styling */
-.nav__list {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  list-style: none;
-  padding: 12px 0;
-  margin: 10px 0 0 0;
-  gap: 22px;
-  border-radius: 10px;
-}
-
-.nav__link {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.05rem;
-  padding: 8px 20px;
-  border-radius: 30px;
-  transition: background-color 0.3s ease;
-}
-
-.nav__link:hover,
-.nav__link:focus,
-.nav__link.active {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-/* Main Content */
-.main-content {
-  margin-top: 30px;
-}
-
-/* Section basic styling */
-section {
-  margin-bottom: 60px;
-  padding: 20px 0;
-}
-
-/* Home Section */
-.home-section {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--color-text);
-}
-
-/* About Section video container */
-.about-section .video-container {
+/* Video Section */
+.video-container {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -151,20 +109,21 @@ section {
   margin-top: 20px;
 }
 
-.about-section .video-container iframe {
-  max-width: 560px;
-  width: 100%;
+.video-container iframe {
+  max-width: 100%;
+  width: 560px;
   height: 315px;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(44, 90, 160, 0.3);
 }
 
-/* Appointment Contact Info */
+/* Appointment Contact */
 .appointment-contact {
-  padding: 40px 20px;
   background-color: #e9f1ff;
+  padding: 40px 20px;
   border-radius: 12px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .appointment-contact a {
@@ -173,202 +132,31 @@ section {
   font-weight: 600;
 }
 
-
-/* Doctors Section */
-.doctors-section {
-  padding: 60px 0;
-  background-color: var(--color-background);
+/* Instagram section */
+.instagram-section {
+  padding: 40px 0;
+  background: #f9fafb;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.doctors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  margin-top: 30px;
-}
-
-.doctor-profile {
-  background: white;
-  padding: 20px;
+.instagram-embed {
+  width: 100%;
+  max-width: 700px;
+  height: 600px;
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 30px rgba(44, 90, 160, 0.3);
+  border: none;
 }
 
-.doctor-profile:hover {
-  transform: translateY(-5px);
-}
-
-.doctor-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--color-primary);
-  margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(44,90,160,0.5);
-}
-
-.doctor-profile h3 {
-  margin: 0 0 8px 0;
-  color: var(--color-primary);
-  font-size: 1.15rem;
-}
-
-.doctor-profile p {
-  color: #555;
-  font-size: 0.95rem;
-}
-
-/* Appointment Section */
-.appointment-section {
-  padding: 60px 0;
-  background-color: #f4f9ff;
-  text-align: center;
-}
-
-.appointment-form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.appointment-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: 600;
-}
-
-.appointment-form input,
-.appointment-form select,
-.appointment-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-.appointment-form button {
-  margin-top: 20px;
-  width: 100%;
+/* Footer */
+.footer {
   background-color: var(--color-primary);
   color: white;
-  font-size: 1.1rem;
-  font-weight: 700;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.appointment-form button:hover {
-  background-color: #24497a;
-}
-
-/* Google Review Button */
-.google-review-section {
   text-align: center;
-  margin: 60px 0;
-}
-
-.google-review-btn {
-  display: inline-block;
-  background-color: #4285f4;
-  color: white;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.6);
-  transition: background-color 0.3s ease;
-}
-
-.google-review-btn:hover {
-  background-color: #3367d6;
-}
-
-/* Contact Section */
-.contact-section {
-  padding: 60px 0;
-  background-color: #fefefe;
-  text-align: center;
-}
-
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  max-width: 900px;
-  margin: 40px auto 0 auto;
-  align-items: start;
-}
-
-.contact-form label {
-  display: block;
-  text-align: left;
+  padding: 20px 0;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: inherit;
-}
-
-.contact-form button {
-  margin-top: 25px;
-  padding: 15px;
-  width: 100%;
-  background-color: var(--color-primary);
-  color: white;
-  font-weight: 700;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #24497a;
-}
-
-.contact-info {
-  background-color: #e6f0fa;
-  padding: 30px 20px;
-  border-radius: 12px;
-  text-align: left;
-  font-size: 1.05rem;
-  color: var(--color-primary);
-}
-
-.contact-info h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.contact-info p {
-  margin-bottom: 10px;
-}
-
-.contact-info a {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-}
+/* Additional styles for form, sections, buttons can be added similarly */
