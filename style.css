@@ -287,5 +287,42 @@ p {
   }
 }
 
+.thank-you-box {
+  max-width: 480px;
+  margin: 90px auto;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(44,90,160,0.12);
+}
+
+.thank-you-box h1 {
+  font-size: 2rem;
+  color: #2c5aa0;
+  margin-bottom: 18px;
+}
+
+.thank-you-box p {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+.thank-you-box .btn {
+  background: #2c5aa0;
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.25s;
+}
+
+.thank-you-box .btn:hover {
+  background: #24497a;
+}
 
 /* Additional styles for form, sections, buttons can be added similarly */
